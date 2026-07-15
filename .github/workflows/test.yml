@@ -1,7 +1,7 @@
-name test
-on push
-jobs
-  test
+name: test
+on: push
+jobs:
+  test:
     runs-on: ubuntu-22.04
     container: f6002inv-alt/ubuntu-22.04-ros2:latest
     steps:
@@ -11,5 +11,5 @@ jobs
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           rosdep update
-          rosdep install -i --from-path src --rosditro humble -y
+          rosdep install -i --from-path src --rosdistro humble -y
           bash -xy ./src/mypkg/test/test.bash /root
