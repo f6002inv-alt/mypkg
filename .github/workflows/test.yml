@@ -19,5 +19,9 @@ jobs:
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
           source /opt/ros/humble/setup.bash
+
+          source /opt/ros/humble/setup.bash
+          export PYTHONPATH=$PYTHONPATH:/root/ros2_ws/install/person_msgs/local/lib/python3.10/dist-packages
+          export PYTHONPATH=$PYTHONPATH:/root/ros2_ws/install/person_msgs/lib/python3.10/site-packages
           bash -xv ./src/test/test.bash /root
 
