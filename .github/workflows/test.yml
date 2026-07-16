@@ -4,6 +4,10 @@ jobs:
   test:
     runs-on: ubuntu-22.04
     container: ros:humble-ros-base-jammy
+    defaults:
+      run:
+        shell: bash
+
     steps:
       - uses: actions/checkout@v2
       - name: build and test
