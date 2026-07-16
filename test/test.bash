@@ -7,6 +7,10 @@ cd $dir/ros2_ws
 
 source /opt/ros/humble/setup.bash
 
+colcon build --packages-select person_msgs --symlink-install
+
+source install/setup.bash
+
 colcon build --symlink-install
 
 source install/setup.bash
