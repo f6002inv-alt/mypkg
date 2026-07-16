@@ -14,14 +14,12 @@ jobs:
         run: |
           apt-get update && apt-get install -y rsync git
           mkdir -p /root/ros2_ws/src
-          rsync -av ./ /root/ros2_ws/src/mypkg/
-          cd /root/ros2_ws/src
-          git clone https://github.com
+          rsync -av ./ /root/ros2_ws/src/
           cd /root/ros2_ws
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
           source /opt/ros/humble/setup.bash
           colcon build
           source install/setup.bash
-          bash -xv ./src/mypkg/test/test.bash /root
+          bash -xv ./src/test/test.bash /root
 
