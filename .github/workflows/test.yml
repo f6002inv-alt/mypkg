@@ -1,6 +1,6 @@
 name: test
 on: push
-jobs:
+jobs: k
   test:
     runs-on: ubuntu-22.04
     container: ghcr.io/f6002inv-alt/mypkg:latest
