@@ -1,17 +1,17 @@
 import rclpy
 from rclpy.node import Node
-from person_msgs.srv import Query
-
-
-def cb(request, response):
-    if request.name == "寺島陸":
-        response.age = 22
-    else:
-        response.age = 255
-
-    return response
+from std_msgs.msg import Int16
 
 rclpy.init()
 node = Node("talker")
-srv = node.create_service(Query, "query", cb)
+pub = node.create_publisher(Int16, "countup", 10)
+n = 0
+def cb():
+    global n
+    msg = Int16()
+    msg.data = n
+    pub.publish(msg)
+    n += 1
+
+node.create_timer(0.5, cb)
 rclpy.spin(node)
