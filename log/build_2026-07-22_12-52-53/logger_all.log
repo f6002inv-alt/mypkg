@@ -1,0 +1,93 @@
+[0.293s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.293s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x74fc005fb640>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74fc005fb100>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74fc005fb100>>)
+[0.648s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.649s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.649s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/j2094mvo/ros2_ws/src/mypkg'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.663s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'mypkg'
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.691s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.691s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.698s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/j2094mvo/ros2_ws/install
+[0.700s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.702s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.821s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_args' from command line to 'None'
+[0.822s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_target' from command line to 'None'
+[0.822s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.822s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.822s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.822s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.822s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.822s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.822s] Level 5:colcon.colcon_core.verb:set package 'mypkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.822s] DEBUG:colcon.colcon_core.verb:Building package 'mypkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/j2094mvo/ros2_ws/src/mypkg/build/mypkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg', 'merge_install': False, 'path': '/home/j2094mvo/ros2_ws/src/mypkg', 'symlink_install': False, 'test_result_base': None}
+[0.822s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.823s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.823s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/j2094mvo/ros2_ws/src/mypkg' with build type 'ament_python'
+[0.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('mypkg', 'ament_prefix_path')
+[0.830s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/hook/ament_prefix_path.ps1'
+[0.832s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/hook/ament_prefix_path.dsv'
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/hook/ament_prefix_path.sh'
+[0.834s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.834s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.021s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/j2094mvo/ros2_ws/src/mypkg'
+[1.021s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.021s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.483s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: register, bdist_dumb, build_py, symlink_data, upload, alias, install_headers, check, egg_info, bdist_rpm, test, init_catalog, develop, install_egg_info, install_lib, saveopts, bdist_egg, setopt, build_scripts, build_clib, rotate, build_ext, extract_messages, dist_info, compile_catalog, update_catalog, install, build, clean, install_data, sdist, upload_docs, install_scripts, bdist, easy_install
+[1.485s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j2094mvo/ros2_ws/src/mypkg': PYTHONPATH=/home/j2094mvo/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/j2094mvo/ros2_ws/src/mypkg/build/mypkg/build install --record /home/j2094mvo/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[1.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j2094mvo/ros2_ws/src/mypkg' returned '0': PYTHONPATH=/home/j2094mvo/ros2_ws/src/mypkg/build/mypkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/mypkg build --build-base /home/j2094mvo/ros2_ws/src/mypkg/build/mypkg/build install --record /home/j2094mvo/ros2_ws/src/mypkg/build/mypkg/install.log --install-scripts $base/lib/mypkg --single-version-externally-managed install_data
+[1.713s] Level 1:colcon.colcon_core.environment:checking '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg' for CMake module files
+[1.713s] Level 1:colcon.colcon_core.environment:checking '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg' for CMake config files
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/lib'
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/bin'
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/lib/pkgconfig/mypkg.pc'
+[1.714s] Level 1:colcon.colcon_core.environment:checking '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/lib/python3.10/site-packages'
+[1.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('mypkg', 'pythonpath')
+[1.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/hook/pythonpath.ps1'
+[1.714s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/hook/pythonpath.dsv'
+[1.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/hook/pythonpath.sh'
+[1.715s] Level 1:colcon.colcon_core.environment:checking '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/bin'
+[1.715s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mypkg)
+[1.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/package.ps1'
+[1.717s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/package.dsv'
+[1.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/package.sh'
+[1.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/package.bash'
+[1.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/mypkg/package.zsh'
+[1.721s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j2094mvo/ros2_ws/src/mypkg/install/mypkg/share/colcon-core/packages/mypkg)
+[1.722s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.723s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.723s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.723s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.768s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.768s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.768s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.768s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.768s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[1.768s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.768s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/j2094mvo/ros2_ws/src/mypkg/install/local_setup.ps1'
+[1.770s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/j2094mvo/ros2_ws/src/mypkg/install/_local_setup_util_ps1.py'
+[1.771s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/j2094mvo/ros2_ws/src/mypkg/install/setup.ps1'
+[1.772s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/j2094mvo/ros2_ws/src/mypkg/install/local_setup.sh'
+[1.773s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/j2094mvo/ros2_ws/src/mypkg/install/_local_setup_util_sh.py'
+[1.774s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/j2094mvo/ros2_ws/src/mypkg/install/setup.sh'
+[1.775s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/j2094mvo/ros2_ws/src/mypkg/install/local_setup.bash'
+[1.775s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/j2094mvo/ros2_ws/src/mypkg/install/setup.bash'
+[1.776s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/j2094mvo/ros2_ws/src/mypkg/install/local_setup.zsh'
+[1.777s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/j2094mvo/ros2_ws/src/mypkg/install/setup.zsh'
